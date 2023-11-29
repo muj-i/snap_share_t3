@@ -53,13 +53,14 @@ CraftyBay is continuously evolving to enhance the shopping experience for users,
 [![Video](https://img.youtube.com/vi/xxx/hqdefault.jpg)](https://www.youtube.com/watch?v=)
 -->
 
+ - **Will be update later.**
 <div style="display: flex; flex-wrap: wrap;">
-    <img src="https://raw.githubusercontent.com/muj-i/snap_share_t3/api_v2/screenshots/ss1.png" width="200" />
-    <img src="https://raw.githubusercontent.com/muj-i/snap_share_t3/api_v2/screenshots/ss2.png" width="200" />
-    <img src="https://raw.githubusercontent.com/muj-i/snap_share_t3/api_v2/screenshots/ss3.png" width="200" />
-    <img src="https://raw.githubusercontent.com/muj-i/snap_share_t3/api_v2/screenshots/ss4.png" width="200" />
-    <img src="https://raw.githubusercontent.com/muj-i/snap_share_t3/api_v2/screenshots/ss5.png" width="200" />
-    <img src="https://raw.githubusercontent.com/muj-i/snap_share_t3/api_v2/screenshots/ss6.png" width="200" />
+    <img src="https://github.com/muj-i/snap_share_t3/blob/main/screenshots/ss1.png?raw=true" width="200" />
+    <img src="https://github.com/muj-i/snap_share_t3/blob/main/screenshots/ss2.png?raw=true" width="200" />
+    <img src="https://github.com/muj-i/snap_share_t3/blob/main/screenshots/ss3.png?raw=true" width="200" />
+    <img src="https://github.com/muj-i/snap_share_t3/blob/main/screenshots/ss4.png?raw=true" width="200" />
+    <img src="https://github.com/muj-i/snap_share_t3/blob/main/screenshots/ss5.png?raw=true" width="200" />
+    <img src="https://github.com/muj-i/snap_share_t3/blob/main/screenshots/ss6.png?raw=true" width="200" />
 </div>
 
 ## Getting Started
