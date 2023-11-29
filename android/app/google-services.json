@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1049783427166",
+    "project_id": "snap-share-team3",
+    "storage_bucket": "snap-share-team3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049783427166:android:7d5aa2d336662d9b6d54cf",
+        "android_client_info": {
+          "package_name": "com.team3.snap_share_t3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjLNuOkhinAY6MedKDRq9RGzE49MiMkqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
