@@ -4,6 +4,8 @@ class AssetsUtils {
 
   // PNG Icons with buttons and Loading icons.
   static const String _imagesPath = 'assets/images';
+  // Asset path
+
   static const String add = '$_imagesPath/add.png';
   static const String alert = '$_imagesPath/alert.png';
   static const String bookmark = '$_imagesPath/bookmark.png';
@@ -28,10 +30,10 @@ class AssetsUtils {
   static const String notification ='$_imagesPath/notification.png';
   static const String phone ='$_imagesPath/Phone.png';
   static const String profile ='$_imagesPath/profile.png';
-  static const String property1deactive ='$_imagesPath/Property 1=Deactive.png';
-  static const String property1default ='$_imagesPath/Property 1=Default.png';
-  static const String property1loading ='$_imagesPath/Property 1=Loading.png';
-  static const String property1variant2 ='$_imagesPath/Property 1=variant2.png';
+  static const String property1deactive ='$_imagesPath/Property_1=Deactive.png';
+  static const String property1default ='$_imagesPath/Property_1=Default.png';
+  static const String property1loading ='$_imagesPath/Property_1=Loading.png';
+  static const String property1variant2 ='$_imagesPath/Property_1=variant2.png';
   static const String rightarrow ='$_imagesPath/rightArrow.png';
   static const String search ='$_imagesPath/search.png';
   static const String send ='$_imagesPath/Send.png';
