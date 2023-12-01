@@ -11,7 +11,7 @@ class AssetsUtils {
   static const String bookmark = '$_imagesPath/bookmark.png';
   static const String checked = '$_imagesPath/Checked.png';
   static const String comment = '$_imagesPath/comment.png';
-  static const String downarrow = '$_imagesPath/Down Arrow.png';
+  static const String downarrow = '$_imagesPath/Down_Arrow.png';
   static const String envelop = '$_imagesPath/envelop.png';
   static const String eye = '$_imagesPath/eye.png';
   static const String eyeslash = '$_imagesPath/eye-slash.png';
@@ -40,6 +40,7 @@ class AssetsUtils {
   static const String shop ='$_imagesPath/shop.png';
   static const String unchecked ='$_imagesPath/unChecked.png';
   static const String video ='$_imagesPath/video.png';
+
 
 
 }
