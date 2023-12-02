@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:snap_share_t3/app/common/utils/image_constant.dart';
 import 'package:snap_share_t3/app/common/widgets/custom_image_view.dart';
 
 import '../custom_icon_button.dart';
@@ -9,9 +8,17 @@ class AppbarTrailingIconButton extends StatelessWidget {
   EdgeInsetsGeometry? margin;
   Function? onTap;
   Color? color;
-  AppbarTrailingIconButton(
-      {Key? key, this.imagePath, this.margin, this.onTap, this.color})
-      : super(key: key);
+  double? height;
+  double? width;
+  AppbarTrailingIconButton({
+    Key? key,
+    this.imagePath,
+    this.margin,
+    this.onTap,
+    this.color,
+    this.height,
+    this.width,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +34,9 @@ class AppbarTrailingIconButton extends StatelessWidget {
           decoration: IconButtonStyleHelper.fillBlue,
           child: CustomImageView(
             color: color,
-            imagePath: IconConstant.iconNotification,
+            imagePath: imagePath,
+            height: height,
+            width: width,
           ),
         ),
       ),
