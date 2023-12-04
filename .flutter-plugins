@@ -17,3 +17,10 @@ shared_preferences_linux=/home/taslim/.pub-cache/hosted/pub.dev/shared_preferenc
 shared_preferences_web=/home/taslim/.pub-cache/hosted/pub.dev/shared_preferences_web-2.2.2/
 shared_preferences_windows=/home/taslim/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.3.2/
 sqflite=/home/taslim/.pub-cache/hosted/pub.dev/sqflite-2.3.0/
+firebase_auth=C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\firebase_auth-4.15.0\\
+firebase_auth_web=C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\firebase_auth_web-5.8.9\\
+firebase_core=C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\firebase_core-2.24.0\\
+firebase_core_web=C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\firebase_core_web-2.9.0\\
+firebase_database=C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\firebase_database-10.3.6\\
+firebase_database_web=C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\firebase_database_web-0.2.3+14\\
+
