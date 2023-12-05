@@ -98,10 +98,8 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
 
-  fonts:
-    - family: Lobster
-      fonts:
-        - asset: assets/fonts/Lobster-Regular.ttf
+
+    
   #       - asset: fonts/Schyler-Italic.ttf
 
 #  fonts:
@@ -121,6 +119,9 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   fonts:
+    # - family: Lobster
+    #   fonts:
+    #     - asset: assets/fonts/Lobster-Regular.ttf
     - family: Lobster
       fonts:
         - asset: assets/fonts/Lobster.otf
