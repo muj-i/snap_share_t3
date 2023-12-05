@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:snap_share_t3/app/modules/login/views/widgets/login_input_textfield.dart';
+import 'package:snap_share_t3/app/routes/app_pages.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -14,7 +15,8 @@ class LoginView extends GetView<LoginController> {
         elevation: 5,
         leading: BackButton(
           onPressed: () {
-            Get.off(context);
+            Get.back();
+           // Get.off(context);
           },
         ),
       ),
@@ -52,7 +54,9 @@ class LoginView extends GetView<LoginController> {
                         disabledBackgroundColor: Colors.grey,
                         disabledForegroundColor: Colors.white70,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed(Routes.HOME);
+                      },
 
                       child: const Text(
                         'Log In',

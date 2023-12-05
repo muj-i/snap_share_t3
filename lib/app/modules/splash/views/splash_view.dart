@@ -57,7 +57,7 @@ class SplashView extends GetView<SplashController> {
                   width: double.infinity,
                   child: ElevatedButton(
                       onPressed: (){
-                        Get.to(const LoginView());
+                        Get.toNamed(Routes.LOGIN);
                       },
                     style: ElevatedButton.styleFrom(
                       elevation: 0,
