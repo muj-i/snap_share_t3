@@ -12,7 +12,7 @@ class AssetsUtils {
   static const String checked = '$_imagesPath/Checked.png';
   static const String comment = '$_imagesPath/comment.png';
   static const String downarrow = '$_imagesPath/Down_Arrow.png';
-  static const String envelop = '$_imagesPath/envelop.png';
+  static const String envelop = '$_imagesPath/envelope.png';
   static const String eye = '$_imagesPath/eye.png';
   static const String eyeslash = '$_imagesPath/eye-slash.png';
   static const String grid = '$_imagesPath/Grid.png';
