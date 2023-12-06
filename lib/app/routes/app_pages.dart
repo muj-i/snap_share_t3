@@ -14,6 +14,8 @@ import '../modules/notifications/bindings/notifications_binding.dart';
 import '../modules/notifications/views/notifications_view.dart';
 import '../modules/profile_details/bindings/profile_details_binding.dart';
 import '../modules/profile_details/views/profile_details_view.dart';
+import '../modules/search/bindings/search_binding.dart';
+import '../modules/search/views/search_view.dart';
 import '../modules/signup/bindings/signup_binding.dart';
 import '../modules/signup/views/signup_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
@@ -28,15 +30,16 @@ class AppPages {
 
   static const INITIAL = Routes.BOTTOM_NAV_LAYOUT;
 
+
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => const HomeView(),
+      page: () => HomeView(),
       binding: HomeBinding(),
       children: [
         GetPage(
           name: _Paths.HOME,
-          page: () => const HomeView(),
+          page: () => HomeView(),
           binding: HomeBinding(),
         ),
       ],
@@ -92,6 +95,11 @@ class AppPages {
       name: _Paths.PROFILE_DETAILS,
       page: () => const ProfileDetailsView(),
       binding: ProfileDetailsBinding(),
+    ),
+    GetPage(
+      name: _Paths.SEARCH,
+      page: () => const SearchView(),
+      binding: SearchBinding(),
     ),
   ];
 }

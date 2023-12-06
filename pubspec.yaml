@@ -44,8 +44,13 @@ dependencies:
   flutter_screenutil: ^5.9.0
   http: ^0.13.6
   flutter_launcher_icons: ^0.13.1
+
   flutter_staggered_grid_view: ^0.7.0
   google_nav_bar: ^5.0.6
+
+  cached_network_image: ^3.3.0
+  shared_preferences: ^2.2.2
+
 
  #icon generate command: flutter pub run flutter_launcher_icons
 flutter_launcher_icons:
@@ -98,11 +103,17 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Lobster
-      fonts:
-        - asset: assets/fonts/Lobster-Regular.ttf
+
+
+    
   #       - asset: fonts/Schyler-Italic.ttf
+
+#  fonts:
+#    - family: Lobster
+#      fonts:
+#        - asset: assets/fonts/Lobster-Regular.ttf
+#  #       - asset: fonts/Schyler-Italic.ttf
+
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
@@ -112,3 +123,27 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    # - family: Lobster
+    #   fonts:
+    #     - asset: assets/fonts/Lobster-Regular.ttf
+    - family: Lobster
+      fonts:
+        - asset: assets/fonts/Lobster.otf
+          weight: 400
+    - family: Satoshi
+      fonts:
+        - asset: assets/fonts/SatoshiBold.otf
+          weight: 700
+        - asset: assets/fonts/SatoshiMedium.otf
+          weight: 500
+        - asset: assets/fonts/SatoshiRegular.otf
+          weight: 400
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400
+        - asset: assets/fonts/InterMedium.ttf
+          weight: 500
+
