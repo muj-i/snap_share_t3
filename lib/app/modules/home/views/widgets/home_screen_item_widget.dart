@@ -83,7 +83,7 @@ class HomeScreenItemWidget extends StatelessWidget {
                               alignment: Alignment.center,
                             );
                           } else {
-                            return const SizedBox();
+                            return const SizedBox.shrink();
                           }
                         }),
                       ],

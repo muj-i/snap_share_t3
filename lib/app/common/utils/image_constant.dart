@@ -18,4 +18,9 @@ class IconConstant {
   static String iconPath = 'assets/svgs';
   static String iconNotification = '$iconPath/icon_notification.svg';
   static String iconAdd = '$iconPath/icon_add.svg';
+  static String iconBookmark = '$iconPath/icon_bookmark.svg';
+  static String iconComment = '$iconPath/icon_comment.svg';
+  static String iconCommentWhite = '$iconPath/icon_comment_white.svg';
+  static String iconLoveFill = '$iconPath/icon_lovefill.svg';
+  static String iconLoveLine = '$iconPath/icon_loveline.svg';
 }
