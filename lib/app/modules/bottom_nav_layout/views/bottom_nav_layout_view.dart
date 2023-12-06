@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:snap_share_t3/app/modules/create_post/views/create_post_view.dart';
 import 'package:snap_share_t3/app/modules/home/views/home_view.dart';
+import 'package:snap_share_t3/app/modules/search/views/search_view.dart';
 import 'package:snap_share_t3/app/modules/user_profile/views/user_profile_view.dart';
 
 import '../controllers/bottom_nav_layout_controller.dart';
@@ -39,7 +40,7 @@ class _BottomNavLayoutViewState extends State<BottomNavLayoutView> {
   int _currentIndex = 0;
   final List<Widget>_screen = [
     HomeView(),
-    const SearchBar(),
+    const SearchView(),
     const CreatePostView(),
     const UserProfileView(),
 

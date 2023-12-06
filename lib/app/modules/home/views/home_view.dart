@@ -36,7 +36,7 @@ class HomeView extends StatelessWidget {
                 ListView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
-                  itemCount: 4,
+                  itemCount: 20,
                   itemBuilder: (context, index) {
                     return buildPost();
                   },

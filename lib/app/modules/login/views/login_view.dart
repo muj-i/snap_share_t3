@@ -55,7 +55,7 @@ class LoginView extends GetView<LoginController> {
                         disabledForegroundColor: Colors.white70,
                       ),
                       onPressed: () {
-                        Get.toNamed(Routes.HOME);
+                        Get.toNamed(Routes.BOTTOM_NAV_LAYOUT);
                       },
 
                       child: const Text(

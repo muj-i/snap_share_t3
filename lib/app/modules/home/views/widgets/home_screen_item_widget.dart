@@ -24,85 +24,79 @@ class HomeScreenItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: AppDecoration.outlineBlueGrey.copyWith(
-        borderRadius: BorderRadiusStyle.roundedBorder8,
-      ),
-      width: 96,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SizedBox(
-            height: 128,
-            width: 96,
-            child: Stack(
-              alignment: Alignment.topLeft,
-              children: [
-                Obx(
-                  () => CustomImageView(
-                    imagePath: homeScreenItemModelObj.yourAvatar!.value,
-                    height: 128,
-                    width: 96,
-                    fit: BoxFit.cover,
-                    radius: BorderRadius.circular(
-                      8,
-                    ),
-                    alignment: Alignment.center,
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        SizedBox(
+          height: 128,
+          width: 96,
+          child: Stack(
+            alignment: Alignment.topLeft,
+            children: [
+              Obx(
+                () => CustomImageView(
+                  imagePath: homeScreenItemModelObj.yourAvatar!.value,
+                  height: 128,
+                  width: 96,
+                  fit: BoxFit.cover,
+                  radius: BorderRadius.circular(
+                    8,
                   ),
+                  alignment: Alignment.center,
                 ),
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                      left: 4,
-                      top: 4,
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CustomIconButton(
+              ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    left: 4,
+                    top: 4,
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CustomIconButton(
+                        height: 28,
+                        width: 28,
+                        padding: const EdgeInsets.all(2),
+                        child: CustomImageView(
                           height: 28,
                           width: 28,
-                          padding: const EdgeInsets.all(2),
-                          child: CustomImageView(
-                            height: 28,
-                            width: 28,
-                            radius: BorderRadiusStyle.roundedBorder16,
-                            imagePath: ImageConstant.imgAvatar,
-                          ),
+                          radius: BorderRadiusStyle.roundedBorder16,
+                          imagePath: ImageConstant.imgAvatar,
                         ),
-                        const SizedBox(height: 20),
-                        Obx(() {
-                          if (homeScreenItemModelObj.userName == 'You') {
-                            return CustomImageView(
-                              imagePath: homeScreenItemModelObj.iconAdd!.value,
-                              height: 24,
-                              width: 24,
-                              alignment: Alignment.center,
-                            );
-                          } else {
-                            return const SizedBox.shrink();
-                          }
-                        }),
-                      ],
-                    ),
+                      ),
+                      const SizedBox(height: 20),
+                      Obx(() {
+                        if (homeScreenItemModelObj.userName == 'You') {
+                          return CustomImageView(
+                            imagePath: homeScreenItemModelObj.iconAdd!.value,
+                            height: 24,
+                            width: 24,
+                            alignment: Alignment.center,
+                          );
+                        } else {
+                          return const SizedBox.shrink();
+                        }
+                      }),
+                    ],
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-          const SizedBox(height: 5),
-          Obx(() {
-            return Text(
-              homeScreenItemModelObj.userName!.value,
-              style: CustomTextStyles.labelLargePrimaryContainer,
-            );
-          }),
-          const SizedBox(height: 3),
-        ],
-      ),
+        ),
+        const SizedBox(height: 5),
+        Obx(() {
+          return Text(
+            homeScreenItemModelObj.userName!.value,
+            style: CustomTextStyles.labelLargePrimaryContainer,
+          );
+        }),
+        const SizedBox(height: 3),
+      ],
     );
   }
 }
