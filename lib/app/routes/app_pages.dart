@@ -28,7 +28,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.SPLASH;
+  static const INITIAL = Routes.BOTTOM_NAV_LAYOUT;
 
 
   static final routes = [
@@ -68,7 +68,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.BOTTOM_NAV_LAYOUT,
-      page: () => const BottomNavLayoutView(),
+      page: () => BottomNavLayoutView(),
       binding: BottomNavLayoutBinding(),
     ),
     GetPage(
