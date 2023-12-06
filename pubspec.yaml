@@ -46,6 +46,7 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
   cached_network_image: ^3.3.0
   shared_preferences: ^2.2.2
+  google_nav_bar: ^5.0.6
 
  #icon generate command: flutter pub run flutter_launcher_icons
 flutter_launcher_icons:
@@ -98,10 +99,7 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
 
-  fonts:
-    - family: Lobster
-      fonts:
-        - asset: assets/fonts/Lobster-Regular.ttf
+
   #       - asset: fonts/Schyler-Italic.ttf
 
 #  fonts:
@@ -139,4 +137,7 @@ flutter:
           weight: 400
         - asset: assets/fonts/InterMedium.ttf
           weight: 500
+    - family: Lobster
+      fonts:
+        - asset: assets/fonts/Lobster-Regular.ttf
 
