@@ -38,7 +38,7 @@ class BottomNavLayoutView extends StatefulWidget {
 class _BottomNavLayoutViewState extends State<BottomNavLayoutView> {
   int _currentIndex = 0;
   final List<Widget>_screen = [
-    const HomeView(),
+    HomeView(),
     const SearchBar(),
     const CreatePostView(),
     const UserProfileView(),
