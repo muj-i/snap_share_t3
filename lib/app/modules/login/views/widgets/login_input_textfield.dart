@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:snap_share_t3/app/common/utils/AssetsUtils.dart';
 
+import '../../../../routes/app_pages.dart';
 import '../../controllers/login_controller.dart';
 
 class Login_Input_TextField extends StatelessWidget {
@@ -83,17 +84,28 @@ class Login_Input_TextField extends StatelessWidget {
         const SizedBox(
           height: 8,
         ),
-        Container(
-          padding: const EdgeInsets.all(2.0),
-          child: Row(
-            children: [
-              Checkbox(
-                value: isBlank,
-                onChanged: (value) => isBlank,
+        Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(2.0),
+              child: Row(
+                children: [
+                  Checkbox(
+                    value: isBlank,
+                    onChanged: (value) => isBlank,
+                  ),
+                  const Text('Save password')
+                ],
               ),
-              const Text('Save password')
-            ],
-          ),
+            ),
+            const Spacer(),
+            TextButton(onPressed: (){
+              Get.toNamed(Routes.FORGOT_PASSWORD);
+
+            },
+                child:
+            const Text("Forgot Password"))
+          ],
         ),
         const SizedBox(
           height: 40,

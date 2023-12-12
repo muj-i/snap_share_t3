@@ -42,6 +42,7 @@ class AssetsUtils {
   static const String shop ='$_imagesPath/shop.png';
   static const String unchecked ='$_imagesPath/unChecked.png';
   static const String video ='$_imagesPath/video.png';
+  static const String forgot ='$_imagesPath/forgot.PNG';
 
 
 
