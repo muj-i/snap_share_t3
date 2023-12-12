@@ -50,6 +50,7 @@ dependencies:
 
   cached_network_image: ^3.3.0
   shared_preferences: ^2.2.2
+  cloud_firestore: ^4.13.5
 
 
 
