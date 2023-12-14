@@ -14,6 +14,7 @@ class Login_Input_TextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Column(
       children: [
         Row(
@@ -30,20 +31,21 @@ class Login_Input_TextField extends StatelessWidget {
           height: 8,
         ),
         TextFormField(
-            onChanged: (_) {
-              controller.emailTEController;
-            },
-            keyboardType: TextInputType.emailAddress,
-            decoration: const InputDecoration(
-              hintText: 'Email',
-              prefixIcon: Padding(
-                padding: EdgeInsetsDirectional.only(start: 10.0),
-                child: Image(image: AssetImage(AssetsUtils.envelop )),
+              controller: controller.emailTEController,
+              onChanged: (_) {
+                controller.emailTEController;
+              },
+              keyboardType: TextInputType.emailAddress,
+              decoration: const InputDecoration(
+                hintText: 'Email',
+                prefixIcon: Padding(
+                  padding: EdgeInsetsDirectional.only(start: 10.0),
+                  child: Image(image: AssetImage(AssetsUtils.envelop )),
+                ),
               ),
-            ),
-            validator: (value) {
-              return controller.emailValidation(value!);
-            }),
+              validator: (value) {
+                return controller.emailValidation(value!);
+              }),
         const SizedBox(
           height: 20,
         ),
@@ -60,26 +62,26 @@ class Login_Input_TextField extends StatelessWidget {
         const SizedBox(
           height: 8,
         ),
-        TextFormField(
+
+        Obx( () => TextFormField(
             onChanged: (_) {
               controller.passwordTEController;
             },
-            obscureText: true,
-            keyboardType: TextInputType.visiblePassword,
-            decoration: const InputDecoration(
-              hintText: 'Input password',
-              prefixIcon: Padding(
-                padding: EdgeInsetsDirectional.only(start: 10.0),
-                child: Image(image: AssetImage(AssetsUtils.lock)),
-              ),
-              suffixIcon: Padding(
-                padding: EdgeInsetsDirectional.only(start: 10.0),
-                child: Image(image: AssetImage(AssetsUtils.eyeslash)),
-              ),
-            ),
-            validator: (value) {
-              return controller.passwordValidation(value!);
-            }),
+                controller: controller.passwordTEController,
+                obscureText: controller.hidePassword.value,
+                keyboardType: TextInputType.visiblePassword,
+                decoration: InputDecoration(
+                  hintText: 'Input password',
+                  prefixIcon:const Image(image: AssetImage(AssetsUtils.lock)),
+                  suffixIcon: IconButton( onPressed: () => controller.hidePassword.value = !controller.hidePassword.value,
+                    icon: Image(image:AssetImage(controller.hidePassword.value ? AssetsUtils.eyeslash : AssetsUtils.eye)),
+                  ),
+                ),
+                validator: (value) {
+                  return controller.passwordValidation(value!);
+                }),
+        ),
+
         const SizedBox(
           height: 8,
         ),
@@ -87,9 +89,10 @@ class Login_Input_TextField extends StatelessWidget {
           padding: const EdgeInsets.all(2.0),
           child: Row(
             children: [
-              Checkbox(
-                value: isBlank,
-                onChanged: (value) => isBlank,
+              Obx(() => Checkbox(
+                  value: controller.rememberMe.value,
+                  onChanged: (value) => controller.rememberMe.value = !controller.rememberMe.value,
+                ),
               ),
               const Text('Save password')
             ],

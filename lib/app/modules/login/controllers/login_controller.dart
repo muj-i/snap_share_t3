@@ -1,11 +1,39 @@
+
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 class LoginController extends GetxController {
 
   final GlobalKey<FormState> loginFormKey = GlobalKey<FormState>();
   final emailTEController = TextEditingController();
   final passwordTEController = TextEditingController();
+  final hidePassword = true.obs;
+  final rememberMe = false.obs;
+  final localStorage = GetStorage();
+  bool loginVerificationInProgress = false;
+
+
+  static loginUser(String email, String password, BuildContext context) async {
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: email, password: password);
+
+      ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('You are logged in')));
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'user-not-found') {
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('No user found')));
+      } else if (e.code == 'wrong-password') {
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Password incorrect')));
+      }
+    }
+  }
 
 
   @override
@@ -13,6 +41,7 @@ class LoginController extends GetxController {
     super.onInit();
     emailTEController.text = '';
     passwordTEController.text = '';
+    update();
   }
 
   @override
@@ -25,6 +54,7 @@ class LoginController extends GetxController {
     super.onClose();
     emailTEController.dispose();
     passwordTEController.dispose();
+    update();
   }
 
 
@@ -41,16 +71,5 @@ class LoginController extends GetxController {
     }
     return null;
   }
-
-  void checkLogin() {
-    if (loginFormKey.currentState!.validate()) {
-          Get.snackbar('Login', 'Login successfully');
-        } else {
-          Get.snackbar('Login', 'Invalid email or password');
-        }
-          emailTEController.clear();
-          passwordTEController.clear();
-      }
-
-  }
+}
 
